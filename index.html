@@ -9,6 +9,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/icons8-cabeça-de-mulher-30.png" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
     <title>Ana C. Santana</title>
 </head>
 
@@ -79,32 +80,6 @@
         <!-- Seção Sobre você -->
         <section id="about" class="flex">
 
-            <!-- Foto do Perfil do Github -->
-            <img  src="https://avatars.githubusercontent.com/u/101267392?s=280" alt="Foto do Perfil do Github" width="300px">
-
-            <!-- Texto Sobre você -->
-            <article id="sobre_texto">
-
-                <h1>Sobre mim</h1>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quibusdam odit voluptates incidunt inventore rem error harum
-                    blanditiis accusamus vitae, minus fugit consequatur?
-                    Dolorum maiores magni deleniti modi sit laudantium totam!
-                </p>
-
-                <!-- Informações do Github -->
-                <div id="sobre_github" class="flex">
-
-                    <a class="botao" target="_blank" href="https://github.com/conteudoGeneration">Github</a>
-                    <p>200 Seguidores</p>
-                    <p>100 Repositórios</p>
-
-                </div>
-
-            </article>
-
         </section>
 
         <!-- Seção Formulário de Contato e Redes Sociais -->
@@ -132,8 +107,10 @@
             </article>
 
             <!-- Seção do Formulário-->
-            <form action="" method="POST">
+            <form id="formulario" action="https://formsubmit.co/11c82182527fb479383b8541bd0b69b1" method="POST">
 
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html"><input type="hidden" name="_captcha" value="false">
+    
                 <label for="name">Nome: </label>
                 <input id="name" type="text" name="name" placeholder="Digite seu nome" >
                 <span id="txtNome"></span>
